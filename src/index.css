@@ -5,6 +5,13 @@ Variables
 */
 
 :root{
+    --clr-black-1: #101010;
+    --clr-orange-1: #D87D4A;
+    --clr-gray-1: #F1F1F1;
+    --clr-gray-2: #FAFAFA;
+    --clr-orange-2: #fbaf85;
+    --clr-white-3: #FFFFFF;
+    --clr-black-2: #000000; 
     --max-width: 1170px;
     --fixed-width: 620px;
 }

@@ -10,7 +10,7 @@ export default function Navbar() {
           <button type="button" className="nav-toggle">
             <FaBars />
           </button>
-          <h2>AUDIOPHILE</h2>
+          <h4>AUDIOPHILE</h4>
           <CartButtons />
         </div>
       </div>
@@ -23,16 +23,20 @@ const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--clr-black-1);
 
   .nav {
     width: 90vw;
     margin: 0 auto;
     max-width: var(--max-width);
+    color: var(--clr-gray-1)
   }
   .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 10px;
+
   }
 
   .nav-toggle {
