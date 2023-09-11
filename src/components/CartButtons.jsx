@@ -3,13 +3,11 @@ import { FaShoppingCart, FaUserMinus, FaUserPlus } from 'react-icons/fa'
 
 export default function CartButtons() {
   return (
-    <Wrapper>
-      <div className="cart-btn-wrapper">
+    <Wrapper className="cart-btn-wrapper">
         <span className="cart">
         <FaShoppingCart />
         <span className="cart-value">0</span>
         </span>
-      </div>
     </Wrapper>
   );
 }

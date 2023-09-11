@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 /*
 =============== 
 Variables
@@ -14,4 +16,13 @@ Variables
     --clr-black-2: #000000; 
     --max-width: 1170px;
     --fixed-width: 620px;
+    transition: var(--transition);
+
+    
+}
+
+* {
+    font-family: 'Manrope', sans-serif;
+    transition: var(--transition);
+
 }
