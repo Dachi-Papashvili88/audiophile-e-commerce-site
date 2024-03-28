@@ -1,5 +1,3 @@
 export default function Speakers() {
-  return (
-    <div>Speakers page</div>
-  )
+  return <div>Speakers page</div>;
 }
