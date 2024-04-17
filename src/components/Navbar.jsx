@@ -1,25 +1,26 @@
 import styled from "styled-components";
 import CartButtons from "./CartButtons";
 import { FaBars } from "react-icons/fa";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <NavContainer>
       <nav>
-      <div className="nav">
-        <div className="nav-header">
-          <button type="button" className="nav-toggle">
-            <FaBars />
-          </button>
-          <h4>AUDIOPHILE</h4>
-          <Link to='/'>HOME</Link>
-          <Link to='headphones'>HEADPHONES</Link>
-          <Link to='speakers'>SPEAKERS</Link>
-          <Link to='earphones'>EARPHONES</Link>
-          <CartButtons />
+        <div className="nav">
+          <div className="nav-header">
+            <button type="button" className="nav-toggle">
+              <FaBars />
+            </button>
+            <Link to="/">
+              <h4>AUDIOPHILE</h4>
+            </Link>
+            <Link to="headphones">HEADPHONES</Link>
+            <Link to="speakers">SPEAKERS</Link>
+            <Link to="earphones">EARPHONES</Link>
+            <CartButtons />
+          </div>
         </div>
-      </div>
       </nav>
     </NavContainer>
   );
@@ -45,8 +46,8 @@ const NavContainer = styled.nav`
     font-weight: bold;
     font-size: 1rem;
   }
-  .nav a:hover{
-    color: var(--clr-gray-1)
+  .nav a:hover {
+    color: var(--clr-gray-1);
   }
 
   .nav-header {
