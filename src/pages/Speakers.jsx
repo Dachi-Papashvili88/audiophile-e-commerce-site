@@ -7,10 +7,10 @@ export default function Speakers() {
     <Wrapper>
       {speakersData.map((speaker) => (
         <div key={speaker.id}>
-          <h1>{speaker.name}</h1>
           <div className="main">
             <img src={speaker.image.desktop} />
             <div>
+              <h1>{speaker.name}</h1>
               <p>{speaker.description}</p>
               <p>{speaker.features}</p>
               <p>$ {speaker.price}</p>
@@ -33,5 +33,14 @@ const Wrapper = styled.div`
     align-items: center;
     text-align: justify;
     gap: 2rem;
+  }
+  @media (max-width: 992px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      width: 100%;
+    }
   }
 `;

@@ -8,10 +8,10 @@ export default function Earphones() {
     <Wrapper>
       {earphonesData.map((earphone) => (
         <div key={earphone.id}>
-          <h1>{earphone.name}</h1>
           <div className="main">
             <img src={earphone.image.desktop} />
             <div>
+              <h1>{earphone.name}</h1>
               <p>{earphone.description}</p>
               <p>{earphone.features}</p>
               <p>$ {earphone.price}</p>
@@ -34,5 +34,14 @@ const Wrapper = styled.div`
     align-items: center;
     text-align: justify;
     gap: 2rem;
+  }
+  @media (max-width: 992px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      width: 100%;
+    }
   }
 `;
