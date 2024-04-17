@@ -6,8 +6,11 @@ export default function Earphones() {
 
   return (
     <Wrapper>
-      {earphonesData.map((earphone) => (
-        <div key={earphone.id}>
+      {earphonesData.map((earphone, index) => (
+        <div
+          key={earphone.id}
+          className={index % 2 === 0 ? "main" : "main reversed"}
+        >
           <div className="main">
             <img src={earphone.image.desktop} />
             <div>
@@ -27,6 +30,8 @@ const Wrapper = styled.div`
   padding: 2em;
   img {
     width: 40%;
+    border-radius: 10px;
+    margin-bottom: 10em;
   }
 
   .main {
@@ -35,6 +40,10 @@ const Wrapper = styled.div`
     text-align: justify;
     gap: 2rem;
   }
+
+  .reversed {
+    flex-direction: row-reverse;
+  }
   @media (max-width: 992px) {
     .main {
       display: flex;
@@ -42,6 +51,7 @@ const Wrapper = styled.div`
     }
     img {
       width: 100%;
+      margin-bottom: 5em;
     }
   }
 `;

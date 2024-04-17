@@ -15,6 +15,7 @@ export default function Navbar() {
             <Link to="/">
               <h4>AUDIOPHILE</h4>
             </Link>
+            <Link to="/">HOME</Link>
             <Link to="headphones">HEADPHONES</Link>
             <Link to="speakers">SPEAKERS</Link>
             <Link to="earphones">EARPHONES</Link>
