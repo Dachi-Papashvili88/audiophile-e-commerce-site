@@ -5,6 +5,7 @@ export default function Speakers() {
   const speakersData = data.filter((item) => item.category === "speakers");
   return (
     <Wrapper>
+      <div className="component-name">EARPHONES</div>
       {speakersData.map((speaker, index) => (
         <div
           key={speaker.id}
@@ -25,6 +26,22 @@ export default function Speakers() {
 
 const Wrapper = styled.div`
   padding: 2em;
+
+  .component-name {
+    font-size: 1.5rem;
+    font-weigth: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-black-2);
+    margin-top: -32px;
+    color: white;
+    width: 95vw;
+    padding: 2em;
+    margin-left: -40px;
+    border-top: 0.5px solid gray;
+  }
+
   .main {
     display: flex;
     align-items: center;

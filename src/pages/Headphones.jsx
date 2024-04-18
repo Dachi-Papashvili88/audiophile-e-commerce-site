@@ -6,6 +6,7 @@ export default function Headphones() {
 
   return (
     <Wrapper>
+      <div className="component-name">HEADPHONES</div>
       {headphonesData.map((headphone, index) => (
         <div
           key={headphone.id}
@@ -30,6 +31,21 @@ const Wrapper = styled.div`
     width: 40%;
     border-radius: 10px;
     margin-bottom: 10em;
+  }
+
+  .component-name {
+    font-size: 1.5rem;
+    font-weigth: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-black-2);
+    margin-top: -32px;
+    color: white;
+    width: 95vw;
+    padding: 2em;
+    margin-left: -40px;
+    border-top: 0.5px solid gray;
   }
 
   .main {
